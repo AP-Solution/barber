@@ -1,0 +1,47 @@
+main {
+	position: relative;
+	background:  url('barber.jpg') no-repeat 50% 0;
+	background-size: cover;
+	background-blend-mode: multiply;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+main h1.welcome-header {
+	margin-top: 20%;
+	color: rgba(255,255,255,0.3);
+	transition: 0.3s;
+	cursor: pointer;
+	user-select: none;
+	letter-spacing: 10px;
+	font-size: calc(24px + 18vmin);
+	transform-origin: 50% 50%;
+}
+main h1.welcome-header:hover {
+	color: rgba(255,255,255,1);
+	text-shadow: 0 0 20px gold;
+}
+main h1.welcome-header:active {
+	transform: translateY(1px) rotate(1deg) scale(1.05);
+}
+
+main .promo {
+	line-height: 50px;
+	border: 5px solid rgba(255,215,0,0.99);
+	box-shadow: 0 0 10px 3px black inset;
+	background-color: rgba(255,255,255,0.2);
+	margin: 20px 0;
+	padding: 15px;
+	border-radius: 15px;
+	min-width: 30%;
+	text-shadow: 0 0 10px black;
+	user-select: none;
+}
+main .promo img {
+	padding-top: 15px;
+}
